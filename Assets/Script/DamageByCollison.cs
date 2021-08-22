@@ -14,6 +14,7 @@ public class DamageByCollison : MonoBehaviour
         correctlayer = gameObject.layer;
     }
 
+    public float invulnperiod = 0;
     float invulnTimer = 0;
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -25,7 +26,7 @@ public class DamageByCollison : MonoBehaviour
         Debug.Log("Trigger detected");
         
             health--;
-            invulnTimer = 2f;
+            invulnTimer = invulnperiod;
 
             gameObject.layer = 7;
        

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    float maxSpeed = 3f;
+    float maxSpeed = 3.5f;
     float sideMove = 3f;
     float shipBoundaryRadius = 0.5f;
     // Start is called before the first frame update

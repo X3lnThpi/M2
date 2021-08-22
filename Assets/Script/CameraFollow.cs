@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     public Transform myTarget;
-    float maxSpeed = 3.1f;
+    float maxSpeed = 3.7f;
 
     private void Start()
     {
