@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         if (pos.y + shipBoundaryRadius > Camera.main.orthographicSize)
         {
             pos.y = Camera.main.orthographicSize - shipBoundaryRadius;
-            Debug.Log(pos);
+           // Debug.Log(pos);
         }
 
         
