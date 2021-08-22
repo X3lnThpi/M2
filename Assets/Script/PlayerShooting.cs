@@ -19,7 +19,8 @@ public class PlayerShooting : MonoBehaviour
             coolDownTimer = fireDelay;
             Debug.Log("Shhot");
            
-            Instantiate(bulletPrefab, transform.position, transform.rotation);
+            GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, transform.position, transform.rotation);
+            bulletGO.layer = gameObject.layer;
 
         }
     }
