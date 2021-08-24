@@ -22,6 +22,8 @@ public class EnemyShooting : MonoBehaviour
             Debug.Log("EnemyShhot");
 
             GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, transform.position, transform.rotation);
+            bulletGO.transform.Rotate(0, 0, -180);
+
             bulletGO.layer = gameObject.layer;
 
         }
